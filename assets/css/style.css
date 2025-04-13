@@ -25,6 +25,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 85px;
   z-index: 1000;
 }
 
@@ -38,8 +39,8 @@ body {
 .navbar .nav-link {
   color: var(--text-color) !important;
   font-weight: 500;
-  margin: 0 15px;
-  font-size: 0.8rem;
+  margin: 0 5px;
+  font-size: 0.77rem;
   position: relative;
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
@@ -105,11 +106,11 @@ body {
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #fec195;
-  --fs-size: 2em;
+  --fs-size: 1.6em;
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
-  font-family: "Arial";
+  font-family: "Helvetica Neue", Arial, sans-serif;
   position: relative;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
@@ -335,6 +336,10 @@ button {
   flex: 0 0 50%;
   padding: 1rem;
 }
+.imgHeroRight {
+  padding-top: 40px;
+  padding-right: 35px;
+}
 #hero .hero-left {
   text-align: left;
 }
@@ -367,6 +372,9 @@ button {
     #f3e5ab
   ); /* Degradado de un café medio a un tono algo más profundo */
   overflow: hidden;
+}
+#caracteristicas p {
+  font-size: 0.9rem;
 }
 #caracteristicas::after {
   content: "";
@@ -475,8 +483,9 @@ button {
 /* Contenedor del Timeline */
 .timeline-wrapper {
   position: relative;
+  margin-top: 5%;
   padding-left: 30px; /* Se reduce un poco el padding */
-  border-left: 2px solid #d7ccc8;
+  border-left: 1px solid #d7ccc8;
 }
 
 /* Cada ítem del timeline */
@@ -516,7 +525,7 @@ button {
 }
 
 .timeline-content p {
-  font-size: 0.9rem; /* Fuente reducida */
+  font-size: 0.75rem; /* Fuente reducida */
   line-height: 1.5;
   color: #3e2723;
 }
@@ -597,14 +606,14 @@ button {
 
 /* Título y descripción de la cookie */
 .cookie-title {
-  font-size: 1.2rem;
+  font-size: 1.11rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
   margin-top: 0.3rem;
 }
 
 .cookie-desc {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #666;
 }
 
@@ -764,12 +773,24 @@ button {
 }
 
 /* Pie de página */
+
 .footer-copy {
+  color: #ffffff; /* Texto gris claro */
   text-align: center;
-  margin-top: 20px;
-  font-size: 0.9rem;
-  opacity: 0.8;
+  padding: 20px;
+  font-size: 0.75rem;
   font-weight: 100;
+}
+
+.footer-copy p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ffffff; /* Blanco brillante para resaltar */
+  font-weight: 600; /* Más grueso */
+  letter-spacing: 0.5px;
 }
 
 .wrapper {
@@ -964,9 +985,11 @@ button {
 
   /* Los cols de Bootstrap se apilarán automáticamente, pero se ajustan algunos márgenes */
   .timeline-wrapper {
+    border-left: 0px;
+    padding-left: 10px;
     margin-top: 5%;
-    padding-left: 20px;
-    border-left-width: 1px;
+    padding-top: 10px; /* Se reduce un poco el padding */
+    border-top: 1px solid #d7ccc8;
   }
   .timeline-item {
     margin-bottom: 20px;

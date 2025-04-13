@@ -15,11 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
     <!-- FontAwesome para el ícono de cookie -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -243,6 +241,7 @@
           <!-- Columna Derecha: Imagen -->
           <div class="hero-right" data-aos="fade-left" data-aos-duration="1200">
             <img
+              class="imgHeroRight"
               src="./assets/img/DeWatermark.ai_1742766450120-Photoroom.png"
               alt="Galleta Creativa"
             />
@@ -297,8 +296,9 @@
             data-category="clasica"
             data-aos="fade-up"
             data-aos-delay="100"
+            style="padding-left: 20px; padding-right: 20px"
           >
-            <article class="card caramel">
+            <article class="card caramel" style="padding-left: 20px; padding-right: 20px">
               <div class="upcoming-badge">
                 <i class="fas fa-hourglass-half"></i>
                 <span>¡Próximamente!</span>
@@ -309,7 +309,7 @@
                 class="cookie-image"
               />
               <div class="info-box">
-                <h3 class="cookie-title card-title">Galleta de Chocolate</h3>
+                <h3 class="cookie-title">Galleta de Chocolate</h3>
                 <p class="cookie-desc">
                   Artesanal rellena de chocolate por dentro, con chips de chocolate.
                 </p>
@@ -322,8 +322,9 @@
             data-category="chocolate"
             data-aos="fade-up"
             data-aos-delay="200"
+            style="padding-left: 20px; padding-right: 20px"
           >
-            <article class="card choco">
+            <article class="card choco" style="padding-left: 20px; padding-right: 20px">
               <div class="discount-badge">
                 <span class="star-icon">★</span>
                 <span>Disc Up To 5% Off</span>
@@ -347,6 +348,7 @@
             data-category="integral"
             data-aos="fade-up"
             data-aos-delay="300"
+            style="padding-left: 20px; padding-right: 20px"
           >
             <article class="card raspberry">
               <div class="discount-badge">
@@ -385,7 +387,9 @@
               />
               <div class="info-box">
                 <h3 class="cookie-title card-title">Galleta Avena con Fresas</h3>
-                <p class="cookie-desc">Artesanal rellena de avena con fresas en su capa superior</p>
+                <p class="cookie-desc">
+                  Artesanal rellena de avena con fresas en su capa superior.
+                </p>
               </div>
             </article>
           </div>
@@ -514,20 +518,22 @@
             <ul class="wrapper">
               <li class="icon facebook">
                 <span class="tooltip">Facebook</span>
-                <svg
-                  viewBox="0 0 320 512"
-                  height="1.2em"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                  ></path>
-                </svg>
+                <a href="" style="text-decoration: none; color: inherit">
+                  <svg
+                    viewBox="0 0 320 512"
+                    height="1.2em"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                    ></path>
+                  </svg>
+                </a>
               </li>
               <li class="icon twitter">
                 <span class="tooltip">X</span>
-                <a href="https://twitter.com" target="_blank">
+                <a href="" target="_blank">
                   <img
                     src="./assets/img/twitter-X-1000x625-Photoroom - copia.png"
                     alt="Logo de X (Twitter)"
@@ -538,24 +544,90 @@
 
               <li class="icon instagram">
                 <span class="tooltip">Instagram</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1.2em"
-                  fill="currentColor"
-                  class="bi bi-instagram"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                  ></path>
-                </svg>
+                <a href="" target="_blank" style="text-decoration: none; color: inherit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.2em"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    ></path>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <!-- Pie de página -->
         <div class="footer-copy">
-          <p>&copy; 2025 BiscuitSecret. Todos los derechos reservados.</p>
+          <p>
+            &copy; <span id="year"></span> Hecho por <span class="highlight">BinaryDreamers </span
+            ><svg
+              class="svg-inline--fa fa-eye-evil"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="eye-evil"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              data-fa-i2svg=""
+              style="height: 14px; width: 14px;margin-bottom: 5px;"
+            >
+              <g class="missing">
+                <path
+                  fill="currentColor"
+                  d="M156.5,447.7l-12.6,29.5c-18.7-9.5-35.9-21.2-51.5-34.9l22.7-22.7C127.6,430.5,141.5,440,156.5,447.7z M40.6,272H8.5 c1.4,21.2,5.4,41.7,11.7,61.1L50,321.2C45.1,305.5,41.8,289,40.6,272z M40.6,240c1.4-18.8,5.2-37,11.1-54.1l-29.5-12.6 C14.7,194.3,10,216.7,8.5,240H40.6z M64.3,156.5c7.8-14.9,17.2-28.8,28.1-41.5L69.7,92.3c-13.7,15.6-25.5,32.8-34.9,51.5 L64.3,156.5z M397,419.6c-13.9,12-29.4,22.3-46.1,30.4l11.9,29.8c20.7-9.9,39.8-22.6,56.9-37.6L397,419.6z M115,92.4 c13.9-12,29.4-22.3,46.1-30.4l-11.9-29.8c-20.7,9.9-39.8,22.6-56.8,37.6L115,92.4z M447.7,355.5c-7.8,14.9-17.2,28.8-28.1,41.5 l22.7,22.7c13.7-15.6,25.5-32.9,34.9-51.5L447.7,355.5z M471.4,272c-1.4,18.8-5.2,37-11.1,54.1l29.5,12.6 c7.5-21.1,12.2-43.5,13.6-66.8H471.4z M321.2,462c-15.7,5-32.2,8.2-49.2,9.4v32.1c21.2-1.4,41.7-5.4,61.1-11.7L321.2,462z M240,471.4c-18.8-1.4-37-5.2-54.1-11.1l-12.6,29.5c21.1,7.5,43.5,12.2,66.8,13.6V471.4z M462,190.8c5,15.7,8.2,32.2,9.4,49.2h32.1 c-1.4-21.2-5.4-41.7-11.7-61.1L462,190.8z M92.4,397c-12-13.9-22.3-29.4-30.4-46.1l-29.8,11.9c9.9,20.7,22.6,39.8,37.6,56.9 L92.4,397z M272,40.6c18.8,1.4,36.9,5.2,54.1,11.1l12.6-29.5C317.7,14.7,295.3,10,272,8.5V40.6z M190.8,50 c15.7-5,32.2-8.2,49.2-9.4V8.5c-21.2,1.4-41.7,5.4-61.1,11.7L190.8,50z M442.3,92.3L419.6,115c12,13.9,22.3,29.4,30.5,46.1 l29.8-11.9C470,128.5,457.3,109.4,442.3,92.3z M397,92.4l22.7-22.7c-15.6-13.7-32.8-25.5-51.5-34.9l-12.6,29.5 C370.4,72.1,384.4,81.5,397,92.4z"
+                ></path>
+                <circle fill="currentColor" cx="256" cy="364" r="28">
+                  <animate
+                    attributeType="XML"
+                    repeatCount="indefinite"
+                    dur="2s"
+                    attributeName="r"
+                    values="28;14;28;28;14;28;"
+                  ></animate>
+                  <animate
+                    attributeType="XML"
+                    repeatCount="indefinite"
+                    dur="2s"
+                    attributeName="opacity"
+                    values="1;0;1;1;0;1;"
+                  ></animate>
+                </circle>
+                <path
+                  fill="currentColor"
+                  opacity="1"
+                  d="M263.7,312h-16c-6.6,0-12-5.4-12-12c0-71,77.4-63.9,77.4-107.8c0-20-17.8-40.2-57.4-40.2c-29.1,0-44.3,9.6-59.2,28.7 c-3.9,5-11.1,6-16.2,2.4l-13.1-9.2c-5.6-3.9-6.9-11.8-2.6-17.2c21.2-27.2,46.4-44.7,91.2-44.7c52.3,0,97.4,29.8,97.4,80.2 c0,67.6-77.4,63.5-77.4,107.8C275.7,306.6,270.3,312,263.7,312z"
+                >
+                  <animate
+                    attributeType="XML"
+                    repeatCount="indefinite"
+                    dur="2s"
+                    attributeName="opacity"
+                    values="1;0;0;0;0;1;"
+                  ></animate>
+                </path>
+                <path
+                  fill="currentColor"
+                  opacity="0"
+                  d="M232.5,134.5l7,168c0.3,6.4,5.6,11.5,12,11.5h9c6.4,0,11.7-5.1,12-11.5l7-168c0.3-6.8-5.2-12.5-12-12.5h-23 C237.7,122,232.2,127.7,232.5,134.5z"
+                >
+                  <animate
+                    attributeType="XML"
+                    repeatCount="indefinite"
+                    dur="2s"
+                    attributeName="opacity"
+                    values="0;0;1;1;0;0;"
+                  ></animate>
+                </path>
+              </g></svg
+            >. Derechos reservados <span class="highlight">BiscuitSecret</span> &
+            <span class="highlight">Binary Dreamers</span>
+          </p>
         </div>
       </div>
     </footer>

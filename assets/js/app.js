@@ -1,3 +1,5 @@
+document.getElementById("year").textContent = new Date().getFullYear();
+
 // Scroll suave para navegación y botones
 document.querySelectorAll("[data-scroll]").forEach((el) => {
   el.addEventListener("click", function (e) {
