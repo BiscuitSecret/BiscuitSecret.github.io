@@ -16,7 +16,6 @@ body {
   --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-
 /* Navbar Mejorado */
 .navbar {
   background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
@@ -26,7 +25,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0.5rem 2.5rem;
+  padding: 0.1rem 2.5rem;
   z-index: 1000;
 }
 
@@ -45,7 +44,8 @@ body {
   position: relative;
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
-  padding: 0.8rem 1.5rem;
+  padding: 0.7rem 1.5rem;
+
 }
 
 .navbar .nav-link:hover {
@@ -97,7 +97,7 @@ body {
   margin: 0;
   height: auto;
   background: transparent;
-  padding: 0;
+  padding: 0rem;
   border: none;
   cursor: pointer;
 }
@@ -107,7 +107,7 @@ body {
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #fec195;
-  --fs-size: 1.6em;
+  --fs-size: 1.4em;
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
@@ -135,28 +135,9 @@ body {
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
 
-.contact-btn {
-  display: inline-block;
-  background-color: #ffe0b2;
-  color: #6f4e37;
-  border: 2px solid #6f4e37;
-  padding: 0.7rem 1.4rem;
-  font-size: 0.8rem;
-  margin-top: 2px;
-  font-weight: 700;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.contact-btn:hover {
-  background-color: #fff;
-  color: #6f4e37;
-}
-
-/* From Uiverse.io by MuhammadHasann */
 button {
   position: relative;
-  padding: 0.7rem 1.4rem;
+  padding: 0.55rem 1.5rem;
   margin-left: 10px;
   background: #fec195;
   font-size: 0.8rem;
@@ -243,7 +224,7 @@ button {
 
 .btnContactanos:hover .star-1 {
   position: absolute;
-  top: -80%;
+  top: -60%;
   left: -30%;
   width: 25px;
   height: auto;
