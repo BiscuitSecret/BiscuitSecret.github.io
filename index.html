@@ -37,7 +37,7 @@
           <img
             src="./assets/img/logo-preview.png"
             alt="Logo"
-            style="height: 70px; margin-right: 20px;padding: 0.2rem 0.1rem;"
+            style="height: 70px; margin-right: 20px; padding: 0.2rem 0.1rem"
           />
           <button class="buttonLogo" data-text="Awesome">
             <span class="actual-text">&nbsp;BiscuitSecret&nbsp;</span>
@@ -277,14 +277,14 @@
         >
           <div class="mb-3 mb-md-0">
             <button class="btn btn-cafe me-2 filter-btn" data-filter="all">Todos</button>
-            <button class="btn btn-cafe me-2 filter-btn" data-filter="clasica">Clásica</button>
+            <!-- <button class="btn btn-cafe me-2 filter-btn" data-filter="clasica">Clásica</button> -->
             <button class="btn btn-cafe me-2 filter-btn" data-filter="chocolate">Chocolate</button>
             <button class="btn btn-cafe filter-btn" data-filter="integral">Integral</button>
           </div>
           <input
             type="text"
             id="buscador"
-            class="form-control w-100 w-md-50"
+            class="form-control w-50 w-md-50"
             placeholder="Buscar producto..."
           />
         </div>
@@ -293,15 +293,19 @@
           <!-- Producto 1: Caramel Cookie (Clasica) -->
           <div
             class="col-12 col-sm-6 col-md-3 mb-4 product-item"
-            data-category="clasica"
+            data-category="chocolate"
             data-aos="fade-up"
             data-aos-delay="100"
-            style="padding: 0.1rem 2.0rem;"
+            style="padding: 0.1rem 2rem"
           >
-            <article class="card caramel" >
-              <div class="upcoming-badge">
+            <article class="card caramel">
+              <!--  <div class="upcoming-badge">
                 <i class="fas fa-hourglass-half"></i>
                 <span>¡Próximamente!</span>
+              </div> -->
+              <div class="discount-badge">
+                <span class="star-icon">★</span>
+                <i class="fas fa-dollar-sign">4.000</i>
               </div>
               <img
                 src="./assets/img/Galleta_Chocolate_Vf-Photoroom.png"
@@ -309,7 +313,7 @@
                 class="cookie-image"
               />
               <div class="info-box">
-                <h3 class="cookie-title">Galleta de Chocolate</h3>
+                <h3 class="cookie-title card-title">Galleta de Chocolate</h3>
                 <p class="cookie-desc">
                   Artesanal rellena de chocolate por dentro, con chips de chocolate.
                 </p>
@@ -322,12 +326,12 @@
             data-category="chocolate"
             data-aos="fade-up"
             data-aos-delay="200"
-            style="padding: 0.1rem 2.0rem;"
+            style="padding: 0.1rem 2rem"
           >
-            <article class="card choco" >
+            <article class="card choco">
               <div class="discount-badge">
                 <span class="star-icon">★</span>
-                <span>Disc Up To 5% Off</span>
+                <i class="fas fa-dollar-sign">4.000</i>
               </div>
               <img
                 src="./assets/img/Galleta_Oreo_chips-removebg-preview.png"
@@ -345,15 +349,15 @@
           <!-- Producto 3: Chocochips Cookie (Integral) -->
           <div
             class="col-12 col-sm-6 col-md-3 mb-4 product-item"
-            data-category="integral"
+            data-category=""
             data-aos="fade-up"
             data-aos-delay="300"
-            style="padding: 0.1rem 2.0rem;"
+            style="padding: 0.1rem 2rem"
           >
             <article class="card raspberry">
               <div class="discount-badge">
                 <span class="star-icon">★</span>
-                <span>Disc Up To 5% Off</span>
+                <i class="fas fa-dollar-sign">5.000</i>
               </div>
               <img
                 src="./assets/img/Galleta_Masmelos.png"
@@ -371,15 +375,15 @@
           <!-- Producto 4: Avena con Fresas (Integral) -->
           <div
             class="col-12 col-sm-6 col-md-3 mb-4 product-item"
-            data-category="chocolate"
+            data-category="integral"
             data-aos="fade-up"
             data-aos-delay="400"
-            style="padding: 0.1rem 2.0rem;"
+            style="padding: 0.1rem 2rem"
           >
             <article class="card chocochips">
               <div class="discount-badge">
                 <span class="star-icon">★</span>
-                <span>Disc Up To 5% Off</span>
+                <i class="fas fa-dollar-sign">4.500</i>
               </div>
               <img
                 src="./assets/img/Avena&Fresas-Photoroom.png"
@@ -387,7 +391,7 @@
                 class="cookie-image"
               />
               <div class="info-box">
-                <h3 class="cookie-title card-title">Galleta Avena con Fresas</h3>
+                <h3 class="cookie-title card-title">Galleta de Avena con Fresas</h3>
                 <p class="cookie-desc">
                   Artesanal rellena de avena con fresas en su capa superior.
                 </p>
@@ -576,7 +580,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
               data-fa-i2svg=""
-              style="height: 14px; width: 14px;margin-bottom: 5px;"
+              style="height: 14px; width: 14px; margin-bottom: 5px"
             >
               <g class="missing">
                 <path
