@@ -225,7 +225,7 @@ button {
 
 .btnContactanos:hover .star-1 {
   position: absolute;
-  top: -60%;
+  top: -40%;
   left: -30%;
   width: 25px;
   height: auto;
