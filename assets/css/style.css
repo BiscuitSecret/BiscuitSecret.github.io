@@ -1,6 +1,5 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
   background-color: #f9f9f9;
@@ -570,6 +569,7 @@ button {
   height: 210px;
   object-fit: cover;
   margin: 40px auto 1rem;
+  padding-bottom: 22px;
   display: block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -579,50 +579,62 @@ button {
   transform: rotate(5deg) scale(1.1);
 }
 
-/* Contenedor de la info (título + descripción) */
 .info-box {
-  background-color: #fff;
+  background: linear-gradient(135deg, #3e2723, #855a52);
+  color: #fff;
+  padding: 12px 10px;
   border-radius: 10px;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-/* Título y descripción de la cookie */
-.cookie-title {
-  font-size: 1.11rem;
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-  margin-top: 0.3rem;
-}
-
-.cookie-desc {
-  font-size: 0.85rem;
-  color: #666;
-}
-
-/* Etiqueta de descuento */
-.discount-badge {
   text-align: center;
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+/*   margin-bottom: 20px; */
+}
+
+.info-box .cookie-title {
+  margin: 0;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
-/* Ícono de estrella */
-.star-icon {
-  color: #ffd700;
-  font-size: 1rem;
-  line-height: 1;
+.info-box .cookie-desc {
+  margin: 10px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Contenedor y estilo del Badge */
+.discount-badge {
+  background: linear-gradient(135deg, #3e2723, #855a52);
+  color: #fff;
+  padding: 5px 25px;
+  font-size: 0.9rem;
+  margin-left: 40px;
+  margin-right: 40px;
+/*   margin-top: 20px; */
+  border-radius: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease;
+}
+
+/* Efecto hover: se escala ligeramente */
+.discount-badge:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para los íconos y texto interno */
+.discount-badge .star-icon {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+.discount-badge i {
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+.discount-badge .price {
+  font-size: 1.4em;
 }
 
 .upcoming-badge {
@@ -650,21 +662,25 @@ button {
 /* Caramel */
 .caramel {
   background: linear-gradient(145deg, #ffe8c2 0%, #ffd19a 100%);
+  border: 1px solid #3e2723;
 }
 
 /* Choco */
 .choco {
   background: linear-gradient(145deg, #e5c1c1 0%, #d6a8a8 100%);
+  border: 1px solid #3e2723;
 }
 
 /* Chocochips */
 .chocochips {
   background: linear-gradient(145deg, #f9e5c4 0%, #efd6a8 100%);
+  border: 1px solid #3e2723;
 }
 
 /* Raspberry */
 .raspberry {
   background: linear-gradient(145deg, #fddce3 0%, #fbbcc9 100%);
+  border: 1px solid #3e2723;
 }
 
 /* Filtro y Buscador */
