@@ -568,8 +568,7 @@ button {
   width: 210px;
   height: 210px;
   object-fit: cover;
-  margin: 40px auto 1rem;
-  padding-bottom: 22px;
+  margin: 20px auto 1rem;
   display: block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -585,6 +584,7 @@ button {
   padding: 12px 10px;
   border-radius: 10px;
   text-align: center;
+  padding-bottom: 25px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 /*   margin-bottom: 20px; */
 }
