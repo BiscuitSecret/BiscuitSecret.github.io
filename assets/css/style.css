@@ -30,7 +30,7 @@ body {
 }
 
 .navbar-logo {
-  max-height: 40px; /* Ajusta el tamaño según prefieras */
+  max-height: 40px; 
   width: auto;
   vertical-align: middle;
 }
@@ -101,7 +101,7 @@ body {
   cursor: pointer;
 }
 
-/* button styling */
+
 .buttonLogo {
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
@@ -115,7 +115,7 @@ body {
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -128,7 +128,7 @@ body {
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-/* hover */
+
 .buttonLogo:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
@@ -508,7 +508,7 @@ button {
 }
 
 .timeline-content p {
-  font-size: 0.75rem; /* Fuente reducida */
+  font-size: 0.85rem; /* Fuente reducida */
   line-height: 1.5;
   margin-left: 0.2rem;
   color: #3e2723;
@@ -948,6 +948,10 @@ button {
     margin-left: -30%;
     margin-top: 30%;
   }
+
+/*   #divContainerNav{
+    margin-left: -20%;
+  } */
   .product-item .card {
     margin-left: auto;
     margin-right: auto;
