@@ -238,9 +238,11 @@
     </section>
 
     <!-- Sección Productos -->
+    <!--  -->
+
     <section id="productos" class="py-5 section-bg">
       <div class="container">
-        <!-- Envolver TÍTULO + IMAGEN en un contenedor -->
+        <!-- …título y filtro igual… -->
         <div
           class="title-wrapper d-flex align-items-center"
           style="margin-top: -3%"
@@ -250,7 +252,7 @@
           <h2 class="section-title">Productos</h2>
           <img src="./assets/img/GalletasAnimadas-Photoroom.png" alt="Galleta" class="cookie-icon" />
         </div>
-        <!-- Filtro y Buscador -->
+
         <div
           id="producto-filtro"
           class="d-flex flex-column flex-md-row justify-content-between align-items-center"
@@ -260,7 +262,6 @@
         >
           <div class="mb-3 mb-md-0">
             <button class="btn btn-cafe me-2 filter-btn" data-filter="all">Todos</button>
-            <!-- <button class="btn btn-cafe me-2 filter-btn" data-filter="clasica">Clásica</button> -->
             <button class="btn btn-cafe me-2 filter-btn" data-filter="chocolate">Chocolate</button>
             <button class="btn btn-cafe filter-btn" data-filter="integral">Integral</button>
           </div>
@@ -271,22 +272,18 @@
             placeholder="Buscar producto..."
           />
         </div>
-        <!-- Contenedor de Productos -->
-        <div class="row mt-5" id="productos-container">
-          <!-- Producto 1: Caramel Cookie (Clasica) -->
+        <!-- Única fila para TODOS los productos,
+             centrando siempre las que no llenen la línea -->
+        <div class="row mt-5 justify-content-center align-items-stretch" id="productos-container">
+          <!-- 1. Caramel Cookie -->
           <div
-            class="col-12 col-sm-6 col-md-3 mb-4 product-item"
+            class="col-12 col-sm-6 col-md-4 mb-4 product-item"
             data-category="chocolate"
             data-aos="fade-up"
             data-aos-delay="100"
-            
           >
-            <article class="card caramel" style="padding: 1rem 1rem">
-              <!--  <div class="upcoming-badge">
-                <i class="fas fa-hourglass-half"></i>
-                <span>¡Próximamente!</span>
-              </div> -->
-              <div class="discount-badge" >
+            <article class="card chocochips" style="padding: 1rem">
+              <div class="discount-badge">
                 <span class="star-icon">&#9733;</span>
                 <i class="fas fa-dollar-sign">4.000</i>
               </div>
@@ -301,15 +298,15 @@
               </div>
             </article>
           </div>
-          <!-- Producto 2: Choco Cookie (Chocolate) -->
+
+          <!-- 2. Choco Oreo -->
           <div
-            class="col-12 col-sm-6 col-md-3 mb-4 product-item"
+            class="col-12 col-sm-6 col-md-4 mb-4 product-item"
             data-category="chocolate"
             data-aos="fade-up"
             data-aos-delay="200"
-            
           >
-            <article class="card choco" style="padding: 1rem 1rem">
+            <article class="card chocoOreo" style="padding: 1rem">
               <div class="discount-badge">
                 <span class="star-icon">★</span>
                 <i class="fas fa-dollar-sign">4.000</i>
@@ -325,37 +322,32 @@
               </div>
             </article>
           </div>
-          <!-- Producto 3: Chocochips Cookie (Integral) -->
-          <div
-            class="col-12 col-sm-6 col-md-3 mb-4 product-item"
-            data-category=""
-            data-aos="fade-up"
-            data-aos-delay="300"
-            
-          >
-            <article class="card raspberry" style="padding: 1rem 1rem">
+
+          <!-- 3. Snickers & Masmelos -->
+          <div class="col-12 col-sm-6 col-md-4 mb-4 product-item" data-aos="fade-up" data-aos-delay="300">
+            <article class="card masmelo" style="padding: 1rem">
               <div class="discount-badge">
                 <span class="star-icon">★</span>
                 <i class="fas fa-dollar-sign">5.000</i>
               </div>
-              <img src="./assets/img/Galleta_Masmelos.png" alt="Chocochips Cookie" class="cookie-image" />
+              <img src="./assets/img/Galleta_Masmelos.png" alt="Snickers & Masmelos" class="cookie-image" />
               <div class="info-box">
-                <h3 class="cookie-title card-title">Snickers & Masmelos</h3>
+                <h3 class="cookie-title card-title">Snicker & Masmelo</h3>
                 <p class="cookie-desc">
                   Artesanal rellena de sneakers con trozos de masmelos en su capa interior.
                 </p>
               </div>
             </article>
           </div>
-          <!-- Producto 4: Avena con Fresas (Integral) -->
+
+          <!-- 4. Avena con Fresas -->
           <div
-            class="col-12 col-sm-6 col-md-3 mb-4 product-item"
+            class="col-12 col-sm-6 col-md-4 mb-4 product-item"
             data-category="integral"
             data-aos="fade-up"
             data-aos-delay="400"
-            
           >
-            <article class="card chocochips" style="padding: 1rem 1rem">
+            <article class="card avena" style="padding: 1rem">
               <div class="discount-badge">
                 <span class="star-icon">★</span>
                 <i class="fas fa-dollar-sign">4.500</i>
@@ -368,6 +360,27 @@
               <div class="info-box">
                 <h3 class="cookie-title card-title">Avena con Fresas</h3>
                 <p class="cookie-desc">Artesanal rellena de avena con fresas en su capa superior.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- 5. Red Velvet -->
+          <div class="col-12 col-sm-6 col-md-4 mb-4 product-item" data-aos="fade-up" data-aos-delay="500">
+            <article class="card red-velvet" style="padding: 1rem">
+              <div class="discount-badge">
+                <span class="star-icon">★</span>
+                <i class="fas fa-dollar-sign">5.000</i>
+              </div>
+              <img
+                src="./assets/img/GalletaRed-removebg-preview.png"
+                alt="Red Velvet Cookie"
+                class="cookie-image"
+              />
+              <div class="info-box">
+                <h3 class="cookie-title card-title">Red Velvet</h3>
+                <p class="cookie-desc">
+                  Galleta aterciopelada con relleno de queso crema y chispas de chocolate blanco.
+                </p>
               </div>
             </article>
           </div>
@@ -580,8 +593,8 @@
                     values="0;0;1;1;0;0;"
                   ></animate>
                 </path>
-              </g></svg>. Derechos reservados <span class="highlight">BiscuitSecret</span> &
-            <span class="highlight">Binary Dreamers</span>
+              </g></svg
+            >. Derechos reservados <span class="highlight">BiscuitSecret.</span>
           </p>
         </div>
       </div>

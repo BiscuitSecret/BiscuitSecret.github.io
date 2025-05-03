@@ -30,7 +30,7 @@ body {
 }
 
 .navbar-logo {
-  max-height: 40px; 
+  max-height: 40px;
   width: auto;
   vertical-align: middle;
 }
@@ -100,7 +100,6 @@ body {
   border: none;
   cursor: pointer;
 }
-
 
 .buttonLogo {
   --border-right: 6px;
@@ -660,29 +659,52 @@ button {
   font-size: 1rem;
 }
 
-/* Colores de fondo específicos para cada tarjeta */
-/* Caramel */
-.caramel {
-  background: linear-gradient(145deg, #ffe8c2 0%, #ffd19a 100%);
-  border: 1px solid #3e2723;
+#productos-container{
+  padding-left: 4rem;
 }
 
-/* Choco */
-.choco {
-  background: linear-gradient(145deg, #e5c1c1 0%, #d6a8a8 100%);
-  border: 1px solid #3e2723;
-}
-
-/* Chocochips */
 .chocochips {
-  background: linear-gradient(145deg, #f9e5c4 0%, #efd6a8 100%);
-  border: 1px solid #3e2723;
+  /* Fondo: degradado + “chips” con radial-gradient */
+  background:
+    /* Capas de chips */ radial-gradient(
+      circle at 25% 25%,
+      rgba(0, 0, 0, 0.2) 4%,
+      transparent 5%
+    ),
+    radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.15) 3%, transparent 4%),
+    radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.18) 5%, transparent 6%),
+    linear-gradient(145deg, #d5a08d 0%, #cfa07a 60%, #d5a08d 100%);
+
+  border: 1px solid #4e342e;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Raspberry */
-.raspberry {
-  background: linear-gradient(145deg, #fddce3 0%, #fbbcc9 100%);
-  border: 1px solid #3e2723;
+.chocoOreo {
+  background: linear-gradient(145deg, #855e52 0%, #212121 60%, #855e52 100%);
+  border: 1px solid #111111;
+}
+
+.red-velvet {
+  /* Gradiente que arranca en burgundy intenso, pasa por rojo vibrante y termina en crema */
+  background: linear-gradient(
+    145deg,
+    #7f1d1d 0%,
+    /* burgundy oscuro */ #c1121f 70%,
+    /* rojo vibrante */ #f8e1e1 100% /* crema suave que recuerda al glaseado */
+  );
+  border: 1px solid #5c1010; /* bordes en tono vino profundo */
+}
+
+.avena {
+  /* Tonos cálidos de avena y fresas */
+  background: linear-gradient(145deg, #f5e1a4 0%, #ff9999 100%);
+  border: 1px solid #cc6677; /* rosa fresa oscuro */
+}
+
+.masmelo {
+  /* Caramelo y suave marshmallow */
+  background: linear-gradient(145deg, #d4a373 0%, #fff5e1 100%);
+  border: 1px solid #b38728; /* caramelo tostado */
 }
 
 /* Filtro y Buscador */
@@ -920,6 +942,10 @@ button {
     margin-left: -10px;
   }
 
+  #productos-container{
+    padding-left: 0rem;
+  }
+
   /* Asignar 60% para el bloque de texto y 40% para la imagen */
   #hero {
     height: 100%;
@@ -949,7 +975,7 @@ button {
     margin-top: 30%;
   }
 
-/*   #divContainerNav{
+  /*   #divContainerNav{
     margin-left: -20%;
   } */
   .product-item .card {
