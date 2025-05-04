@@ -6,7 +6,6 @@ body {
   color: #333;
 }
 
-
 /* Navbar Personalizado */
 /* Variables de color para fácil personalización */
 :root {
@@ -665,7 +664,6 @@ button {
   padding-left: 4rem;
 }
 
-
 /* 1) Estilos comunes para todas las cards de galleta */
 article.card.chocoOreo,
 article.card.chocochips,
@@ -679,40 +677,39 @@ article.card.masmelo {
   border: none;
 
   /* curva SVG/PNG en la base, igual en todas */
-  background-image: url('../img/3ak.png');
+  background-image: url("../img/3ak.png");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 205% auto;
-  border:#3e2723 1px solid;
+  border: #3e2723 1px solid;
 }
 
 /* 2) Ahora, simplemente asigna el fondo de color a cada clase */
 
 /* CHOCO OREO: marrón oscuro */
 article.card.chocoOreo {
-  background-color: #5D4037;
+  background-color: #5d4037;
 }
 
 /* CHOCO CHIPS: masa rubia */
 article.card.chocochips {
-  background-color: #ffd078;
+  background-color: #6d564f;
 }
 
 /* RED VELVET: rojo glaseado */
 article.card.red-velvet {
-  background-color: #C1121F;
+  background-color: #c1121f;
 }
 
-/* AVENA: crema de avena */
+/* AVENA: crema de avena vibrante */
 article.card.avena {
-  background-color: #ffe595;
+  background-color: #ffdf7d; /* amarillo avena más luminoso */
 }
 
-/* MASHMELO: caramelo suave */
+/* MASMELO: caramelo claro pastel */
 article.card.masmelo {
-  background-color: #D4A373;
+  background-color: #ffd699; /* tonos melocotón suave */
 }
-
 
 
 
