@@ -665,49 +665,56 @@ button {
   padding-left: 4rem;
 }
 
-.chocochips {
-  /* Fondo: degradado + “chips” con radial-gradient */
-  background:
-    /* Capas de chips */ radial-gradient(
-      circle at 25% 25%,
-      rgba(0, 0, 0, 0.2) 4%,
-      transparent 5%
-    ),
-    radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.15) 3%, transparent 4%),
-    radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.18) 5%, transparent 6%),
-    linear-gradient(145deg, #d5a08d 0%, #cfa07a 60%, #d5a08d 100%);
 
-  border: 1px solid #4e342e;
-  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+/* 1) Estilos comunes para todas las cards de galleta */
+article.card.chocoOreo,
+article.card.chocochips,
+article.card.red-velvet,
+article.card.avena,
+article.card.masmelo {
+  position: relative;
+  padding: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+
+  /* curva SVG/PNG en la base, igual en todas */
+  background-image: url('../img/3ak.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 205% auto;
+  border:#3e2723 1px solid;
 }
 
-.chocoOreo {
-  background: linear-gradient(145deg, #855e52 0%, #212121 60%, #855e52 100%);
-  border: 1px solid #111111;
+/* 2) Ahora, simplemente asigna el fondo de color a cada clase */
+
+/* CHOCO OREO: marrón oscuro */
+article.card.chocoOreo {
+  background-color: #5D4037;
 }
 
-.red-velvet {
-  /* Gradiente que arranca en burgundy intenso, pasa por rojo vibrante y termina en crema */
-  background: linear-gradient(
-    145deg,
-    #7f1d1d 0%,
-    /* burgundy oscuro */ #c1121f 70%,
-    /* rojo vibrante */ #f8e1e1 100% /* crema suave que recuerda al glaseado */
-  );
-  border: 1px solid #5c1010; /* bordes en tono vino profundo */
+/* CHOCO CHIPS: masa rubia */
+article.card.chocochips {
+  background-color: #ffd078;
 }
 
-.avena {
-  /* Tonos cálidos de avena y fresas */
-  background: linear-gradient(145deg, #f5e1a4 0%, #ff9999 100%);
-  border: 1px solid #cc6677; /* rosa fresa oscuro */
+/* RED VELVET: rojo glaseado */
+article.card.red-velvet {
+  background-color: #C1121F;
 }
 
-.masmelo {
-  /* Caramelo y suave marshmallow */
-  background: linear-gradient(145deg, #d4a373 0%, #fff5e1 100%);
-  border: 1px solid #b38728; /* caramelo tostado */
+/* AVENA: crema de avena */
+article.card.avena {
+  background-color: #ffe595;
 }
+
+/* MASHMELO: caramelo suave */
+article.card.masmelo {
+  background-color: #D4A373;
+}
+
+
+
 
 /* Filtro y Buscador */
 #producto-filtro {
