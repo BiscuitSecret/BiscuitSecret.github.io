@@ -6,6 +6,7 @@ body {
   color: #333;
 }
 
+
 /* Navbar Personalizado */
 /* Variables de color para fácil personalización */
 :root {
@@ -44,7 +45,7 @@ body {
   position: relative;
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
-  padding: 0.7rem 1.5rem;
+  padding: 0.9rem 1.5rem;
 }
 
 .navbar .nav-link:hover {
@@ -105,11 +106,11 @@ body {
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #fec195;
-  --fs-size: 1.4em;
+  --fs-size: 1.8em;
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Dancing Script", cursive;
   position: relative;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
@@ -134,11 +135,12 @@ body {
 }
 
 button {
+  font-family: "Dancing Script", cursive;
   position: relative;
-  padding: 0.55rem 1.5rem;
+  padding: 0.35rem 1rem;
   margin-left: 10px;
   background: #fec195;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #181818;
   border: 3px solid #fec195;
@@ -659,7 +661,7 @@ button {
   font-size: 1rem;
 }
 
-#productos-container{
+#productos-container {
   padding-left: 4rem;
 }
 
@@ -790,7 +792,8 @@ button {
 
 /* Descripción debajo del logo en el footer */
 .footer-description {
-  font-size: 0.7rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.1rem;
   color: #d7ccc8;
   margin-top: 20px;
   max-width: 250px;
@@ -799,10 +802,11 @@ button {
 /* Pie de página */
 
 .footer-copy {
+  font-family: "Dancing Script", cursive;
   color: #ffffff; /* Texto gris claro */
   text-align: center;
   padding: 20px;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 100;
 }
 
@@ -942,7 +946,7 @@ button {
     margin-left: -10px;
   }
 
-  #productos-container{
+  #productos-container {
     padding-left: 0rem;
   }
 
